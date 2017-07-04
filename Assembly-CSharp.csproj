@@ -49,12 +49,13 @@
      <Compile Include="Assets\Scripts\AsyncClient.cs" />
      <Compile Include="Assets\Scripts\AsyncServer.cs" />
      <Compile Include="Assets\Scripts\DebugDisplay.cs" />
+     <Compile Include="Assets\Scripts\EventManager.cs" />
+     <Compile Include="Assets\Scripts\HUDController.cs" />
      <Compile Include="Assets\Scripts\NetworkController.cs" />
      <Compile Include="Assets\Scripts\NetworkIndicator.cs" />
      <Compile Include="Assets\Scripts\ProgramController.cs" />
      <Compile Include="Assets\Scripts\SocketController.cs" />
      <Compile Include="Assets\Scripts\StreamingSender.cs" />
-     <Compile Include="Assets\Scripts\TextDisplay.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

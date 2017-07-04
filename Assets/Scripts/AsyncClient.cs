@@ -63,7 +63,7 @@ namespace Citrus
 
 		protected override void ReceiveCallback(IAsyncResult ar)
 		{
-			Debug.Log("Receive callback");
+			EventManager.TriggerEvent ("ClientReceivedData");
 			try
 			{
 				// Retrieve the state object and the client socket 
@@ -81,7 +81,7 @@ namespace Citrus
 					Array.Copy(state.buffer, 0, read, 0, bytesRead);
 
 					// raise the event
-					NetworkController.IncomingReadHandler(this, read);
+					//NetworkController.IncomingReadHandler(this, read);
 
 					// start reading again
 					client.BeginReceive(state.buffer, 0, StateObject.BUFFER_SIZE, 0,
@@ -101,6 +101,7 @@ namespace Citrus
 				NetworkController.RaiseIncomingErrorHandler(this, e);
 			}
 		}
+
 
 		public Boolean IsConnected()
 		{

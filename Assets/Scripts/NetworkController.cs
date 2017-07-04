@@ -80,7 +80,7 @@ namespace Citrus
 		public static void IncomingReadHandler(SocketController sender, byte[] data)
 		{
 			// get the event type and message length if possible
-			if(data.Length == 4)
+			if(true)
 			{
 				int eventType = NextInt32(ref data);
 				Func<byte[], bool> eventCallback;

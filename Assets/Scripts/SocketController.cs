@@ -40,6 +40,7 @@ namespace Citrus
 		protected int portNumber = 42209;
 		protected Socket asyncSocket;
 
+
 		protected void BeginReceive(Socket handler)
 		{
 			try
