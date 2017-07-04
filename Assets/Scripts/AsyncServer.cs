@@ -200,6 +200,22 @@ namespace Citrus
 			}
 		}
 
+		public int GetNumClients()
+		{
+			return this.clients.Count;
+		}
+
+		public void SendToClient(int eventType, byte[] message, int clientID)
+		{
+			try
+			{
+				this.Send(this.clients[clientID - 1], eventType, message);
+			}
+			catch(System.Exception e) {
+				Debug.Log (e.Message);
+			}
+		}
+
 		public void SendToAllClients(int eventType, byte[] message)
 		{
 			for(int i = 0; i < this.clients.Count; i++)

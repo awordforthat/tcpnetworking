@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\NetworkIndicator.cs" />
      <Compile Include="Assets\Scripts\ProgramController.cs" />
      <Compile Include="Assets\Scripts\SocketController.cs" />
+     <Compile Include="Assets\Scripts\StreamingSender.cs" />
      <Compile Include="Assets\Scripts\TextDisplay.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
