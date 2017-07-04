@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPDemo", "Assembly-CSharp.csproj", "{72461D1E-8902-4C46-6A5C-FADC5A4B6B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPDemo", "Assembly-CSharp-Editor.csproj", "{BEE3D56E-0CF0-7BE3-5AF2-729D9FD49C04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72461D1E-8902-4C46-6A5C-FADC5A4B6B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72461D1E-8902-4C46-6A5C-FADC5A4B6B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72461D1E-8902-4C46-6A5C-FADC5A4B6B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72461D1E-8902-4C46-6A5C-FADC5A4B6B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE3D56E-0CF0-7BE3-5AF2-729D9FD49C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE3D56E-0CF0-7BE3-5AF2-729D9FD49C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE3D56E-0CF0-7BE3-5AF2-729D9FD49C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE3D56E-0CF0-7BE3-5AF2-729D9FD49C04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DebugDisplay.cs">
+    <Files>
+      <File FileName="Assets\Scripts\AsyncServer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NetworkController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DebugDisplay.cs" Line="28" Column="66" />
+      <File FileName="Assets\Scripts\AsyncClient.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TextDisplay.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SocketController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NetworkIndicator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ProgramController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
