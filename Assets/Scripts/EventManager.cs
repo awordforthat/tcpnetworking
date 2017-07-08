@@ -3,6 +3,12 @@ using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
 
+public class EventTypes:MonoBehaviour
+{
+	public static string EVENT_CLIENT_DATA_RECEIVED = "EVENT_CLIENT_DATA_RECEIVED";
+	public static string EVENT_SERVER_DATA_RECEIVED = "EVENT_SERVER_DATA_RECEIVED";
+}
+
 public class EventManager:MonoBehaviour{
 	
 	private Dictionary <string, UnityEvent> eventDictionary;

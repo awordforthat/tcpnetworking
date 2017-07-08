@@ -163,6 +163,7 @@ namespace Citrus
 
 		protected override void ReceiveCallback(IAsyncResult ar)
 		{
+			EventManager.TriggerEvent (EventTypes.EVENT_SERVER_DATA_RECEIVED);
 			Debug.Log("Receive callback...");
 			try
 			{

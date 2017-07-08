@@ -63,7 +63,8 @@ namespace Citrus
 
 		protected override void ReceiveCallback(IAsyncResult ar)
 		{
-			EventManager.TriggerEvent ("ClientReceivedData");
+			Debug.Log ("Client receive callback");
+			EventManager.TriggerEvent (EventTypes.EVENT_CLIENT_DATA_RECEIVED);
 			try
 			{
 				// Retrieve the state object and the client socket 

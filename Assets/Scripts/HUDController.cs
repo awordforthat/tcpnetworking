@@ -12,11 +12,10 @@ public class HUDController : MonoBehaviour {
 	private Text field_numPacketsReceived;
 
 	[SerializeField]
-	private Citrus.AsyncClient serverController;
+	private Citrus.AsyncClient clientController;
 
 	[SerializeField]
-	private Citrus.AsyncServer clientController;
-	// Use this for initialization
+	private Citrus.AsyncServer serverController;
 
 	private int packetsReceived;
 
@@ -26,16 +25,16 @@ public class HUDController : MonoBehaviour {
 
 	private void OnEnable()
 	{
-		EventManager.StartListening ("ClientReceivedData", this.setMessage);
+		EventManager.StartListening (EventTypes.EVENT_CLIENT_DATA_RECEIVED, this.setMessage);
 	}
 
 	private void OnDisable()
 	{
-		EventManager.StopListening ("ClientReceivedData", this.setMessage);
+		EventManager.StopListening (EventTypes.EVENT_CLIENT_DATA_RECEIVED, this.setMessage);
 	}
 	// Update is called once per frame
 	void Update () {
-		
+		field_numPacketsReceived.text = "Received this many packets so far: " + packetsReceived.ToString ();
 	}
 
 	public void Reset()
@@ -47,7 +46,7 @@ public class HUDController : MonoBehaviour {
 	private void setMessage()
 	{
 		packetsReceived++;
-		Debug.Log ("Packets received: " + packetsReceived.ToString ());
+		Debug.Log ("Received this many packets: " + packetsReceived.ToString ());
 	}
 
 }

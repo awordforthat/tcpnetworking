@@ -1,15 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DebugDisplay.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HUDController.cs">
     <Files>
-      <File FileName="Assets\Scripts\AsyncServer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\NetworkController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DebugDisplay.cs" Line="28" Column="66" />
-      <File FileName="Assets\Scripts\AsyncClient.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TextDisplay.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SocketController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AsyncServer.cs" Line="212" Column="40" />
+      <File FileName="Assets\Scripts\NetworkController.cs" Line="361" Column="1" />
+      <File FileName="Assets\Scripts\AsyncClient.cs" Line="67" Column="7" />
+      <File FileName="Assets\Scripts\SocketController.cs" Line="43" Column="3" />
       <File FileName="Assets\Scripts\NetworkIndicator.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ProgramController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StreamingSender.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HUDController.cs" Line="50" Column="66" />
+      <File FileName="Assets\Scripts\EventManager.cs" Line="62" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
