@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ResizableTextBox.cs" />
      <Compile Include="Assets\Scripts\AsyncClient.cs" />
      <Compile Include="Assets\Scripts\AsyncServer.cs" />
      <Compile Include="Assets\Scripts\DebugDisplay.cs" />

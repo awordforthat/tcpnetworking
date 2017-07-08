@@ -23,6 +23,7 @@ public class DebugDisplay : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		
 		this.textfield.text = this.message;
 
 		if(this.clientController != null && Input.GetMouseButtonDown(0))
