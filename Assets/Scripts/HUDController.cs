@@ -25,12 +25,12 @@ public class HUDController : MonoBehaviour {
 
 	private void OnEnable()
 	{
-		EventManager.StartListening (EventTypes.EVENT_CLIENT_DATA_RECEIVED, this.setMessage);
+		EventManager.StartListening (EventTypes.EVENT_CLIENT_DATA_RECEIVED, this.incrementMessageCounter);
 	}
 
 	private void OnDisable()
 	{
-		EventManager.StopListening (EventTypes.EVENT_CLIENT_DATA_RECEIVED, this.setMessage);
+		EventManager.StopListening (EventTypes.EVENT_CLIENT_DATA_RECEIVED, this.incrementMessageCounter);
 	}
 	// Update is called once per frame
 	void Update () {
@@ -43,10 +43,9 @@ public class HUDController : MonoBehaviour {
 		packetsReceived = 0;
 	}
 
-	private void setMessage()
+	private void incrementMessageCounter()
 	{
 		packetsReceived++;
-		Debug.Log ("Received this many packets: " + packetsReceived.ToString ());
 	}
 
 }

@@ -15,6 +15,11 @@ namespace Citrus
 		{
 			connected = false;
 			this.Connect();
+			float multTest = CppAPI.TestMultiply (5, 4);
+			Debug.Log ("Multiplication test results: " + multTest);
+			float divTest = CppAPI.TestDivide (30, 6);
+			Debug.Log ("Division test results: " + divTest);
+
 		}
 
 		private void OnApplicationQuit()

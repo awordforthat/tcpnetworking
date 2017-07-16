@@ -12,7 +12,7 @@ public class DebugDisplay : MonoBehaviour
 	private Citrus.AsyncClient clientController;
 	[SerializeField]
 	private Citrus.AsyncServer serverController;
-	private string message = "Begin";
+	private static string message = "Begin";
 
 	// Use this for initialization
 	void Awake()
@@ -24,7 +24,7 @@ public class DebugDisplay : MonoBehaviour
 	void Update()
 	{
 		
-		this.textfield.text = this.message;
+		this.textfield.text = DebugDisplay.message;
 
 		if(this.clientController != null && Input.GetMouseButtonDown(0))
 		{
@@ -39,6 +39,11 @@ public class DebugDisplay : MonoBehaviour
 
 	void OnLogMessageReceived(string condition, string stackTrace, LogType type)
 	{
-		this.message += "\n" + condition;
+		DebugDisplay.message += "\n" + condition;
+	}
+
+	public static void LogMessage(string message)
+	{
+		DebugDisplay.message += "\n" + message;
 	}
 }
