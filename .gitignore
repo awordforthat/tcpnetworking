@@ -1,3 +1,8 @@
 ./Temp/*
 ./TempFiles/*
 ./Temp
+./Builds/*
+./Library/*
+./obj/*
+Temp
+TempFiles
