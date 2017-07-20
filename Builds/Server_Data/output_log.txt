@@ -19,15 +19,15 @@ Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\Server_Data\Managed\Un
 Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\Server_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\Server_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\Server_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.051 seconds
+- Completed reload, in  0.034 seconds
 Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\Server_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\Server_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 2.142418 ms
+UnloadTime: 1.510716 ms
 Starting TCP server on port: 42209, with IP: 192.168.1.148
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -48,47 +48,11 @@ Begin receiving...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bytes sent: 22
+Sending value...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Bytes sent: 23
+Bytes sent: 16
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -113,4 +77,4 @@ Close self...
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 304c -> priority: 1 
+  Thread -> id: 2e48 -> priority: 1 

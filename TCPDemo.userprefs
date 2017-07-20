@@ -1,19 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ResizableTextBox.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ClientSide\AsyncClient.cs">
     <Files>
-      <File FileName="Assets\Scripts\AsyncServer.cs" Line="166" Column="70" />
-      <File FileName="Assets\Scripts\NetworkController.cs" Line="94" Column="4" />
-      <File FileName="Assets\Scripts\AsyncClient.cs" Line="66" Column="42" />
-      <File FileName="Assets\Scripts\HUDController.cs" Line="46" Column="38" />
-      <File FileName="Assets\Scripts\EventManager.cs" Line="9" Column="81" />
-      <File FileName="Assets\Scripts\SocketController.cs" Line="51" Column="10" />
-      <File FileName="Assets\Scripts\DebugDisplay.cs" Line="35" Column="13" />
-      <File FileName="Assets\ResizableTextBox.cs" Line="26" Column="105" />
+      <File FileName="Assets\Scripts\CppAPI.cs" Line="15" Column="2" />
+      <File FileName="Assets\Scripts\SendButtonController.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\Networking\StreamingSender.cs" Line="60" Column="69" />
+      <File FileName="Assets\Scripts\Events\Event_IntReceivedFromSender.cs" Line="19" Column="3" />
+      <File FileName="Assets\Scripts\ServerSide\AsyncServer.cs" Line="76" Column="1" />
+      <File FileName="Assets\Scripts\Events\EventManager.cs" Line="28" Column="1" />
+      <File FileName="Assets\Scripts\ClientSide\AsyncClient.cs" Line="31" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Workspace\TCPSandbox\TCPDemo\Assets\Scripts\ClientSide\AsyncClient.cs" line="88" column="71" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -46,18 +46,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ResizableTextBox.cs" />
-     <Compile Include="Assets\Scripts\AsyncClient.cs" />
-     <Compile Include="Assets\Scripts\AsyncServer.cs" />
      <Compile Include="Assets\Scripts\CppAPI.cs" />
-     <Compile Include="Assets\Scripts\DebugDisplay.cs" />
-     <Compile Include="Assets\Scripts\EventManager.cs" />
-     <Compile Include="Assets\Scripts\HUDController.cs" />
-     <Compile Include="Assets\Scripts\NetworkController.cs" />
-     <Compile Include="Assets\Scripts\NetworkIndicator.cs" />
+     <Compile Include="Assets\Scripts\Events\EventManager.cs" />
+     <Compile Include="Assets\Scripts\Events\Event_IntReceivedFromSender.cs" />
+     <Compile Include="Assets\Scripts\Networking\ClientSide\AsyncClient.cs" />
+     <Compile Include="Assets\Scripts\Networking\NetworkController.cs" />
+     <Compile Include="Assets\Scripts\Networking\ServerSide\AsyncServer.cs" />
+     <Compile Include="Assets\Scripts\Networking\ServerSide\SocketController.cs" />
+     <Compile Include="Assets\Scripts\Networking\StreamingSender.cs" />
      <Compile Include="Assets\Scripts\ProgramController.cs" />
-     <Compile Include="Assets\Scripts\SocketController.cs" />
-     <Compile Include="Assets\Scripts\StreamingSender.cs" />
+     <Compile Include="Assets\Scripts\SendButtonController.cs" />
+     <Compile Include="Assets\Scripts\UI\DebugDisplay.cs" />
+     <Compile Include="Assets\Scripts\UI\HUDController.cs" />
+     <Compile Include="Assets\Scripts\UI\NetworkIndicator.cs" />
+     <Compile Include="Assets\Scripts\UI\ResizableTextBox.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
