@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Text;
 using System;
+using Citrus;
 
 public class DebugDisplay : MonoBehaviour
 {
@@ -17,7 +18,8 @@ public class DebugDisplay : MonoBehaviour
 	// Use this for initialization
 	void Awake()
 	{
-		Application.logMessageReceivedThreaded += this.OnLogMessageReceived;
+		//Application.logMessageReceivedThreaded += this.OnLogMessageReceived;
+		AsyncClient.event_ClientReceivedMessage += this.receiveMessage;
 	}
 	
 	// Update is called once per frame
@@ -45,5 +47,17 @@ public class DebugDisplay : MonoBehaviour
 	public static void LogMessage(string message)
 	{
 		DebugDisplay.message += "\n" + message;
+	}
+
+	private void receiveMessage(byte[] message)
+	{
+		String msg = "";
+		Debug.Log ("received message");
+		while (message.Length >= 4) {
+			msg += " " + NetworkController.NextInt32 (ref message).ToString();
+		}
+		DebugDisplay.message += "\n" + msg;
+
+
 	}
 }

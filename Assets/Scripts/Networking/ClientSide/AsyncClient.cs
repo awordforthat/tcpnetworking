@@ -10,6 +10,8 @@ namespace Citrus
 	public class AsyncClient : SocketController
 	{
 		private Boolean connected;
+		public delegate void Event_ClientReceivedMessage(byte[] message);
+		public static Event_ClientReceivedMessage event_ClientReceivedMessage;
 
 		private void Start()
 		{
@@ -69,7 +71,6 @@ namespace Citrus
 		protected override void ReceiveCallback(IAsyncResult ar)
 		{
 			Debug.Log ("Client receive callback");
-			EventManager.TriggerEvent (EventTypes.EVENT_CLIENT_DATA_RECEIVED);
 			try
 			{
 				// Retrieve the state object and the client socket 
@@ -85,12 +86,12 @@ namespace Citrus
 					// get the data
 					byte[] read = new byte[bytesRead];
 					Array.Copy(state.buffer, 0, read, 0, bytesRead);
-					Debug.Log("Received event type: " + NetworkController.ParseInt32(read)); //message type
-					Debug.Log("Received message length: " + NetworkController.ParseInt32(read, 4)); // message length
-					Debug.Log("Received message: " + NetworkController.ParseInt32(read, 8));
-					Debug.Log("Received message: " + NetworkController.ParseInt32(read, 12));
+//					Debug.Log("Received event type: " + NetworkController.ParseInt32(read)); //message type
+//					Debug.Log("Received message length: " + NetworkController.ParseInt32(read, 4)); // message length
+//					Debug.Log("Received message: " + NetworkController.ParseInt32(read, 8));
+//					Debug.Log("Received message: " + NetworkController.ParseInt32(read, 12));
 					// raise the event
-					//NetworkController.IncomingReadHandler(this, read);
+					event_ClientReceivedMessage(read);
 
 					// start reading again
 					client.BeginReceive(state.buffer, 0, StateObject.BUFFER_SIZE, 0,

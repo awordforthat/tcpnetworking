@@ -26,7 +26,9 @@ public class StreamingSender : MonoBehaviour {
 	void Start () {
 		timeSinceLastSend = 0;
 		message = 0;
-		EventManager.StartListening (EventTypes.EVENT_SEND_SERVER_TO_CLIENT, this.SendValueToClient);
+
+		SendButtonController.event_SendClicked += SendValueToClient;
+
 	}
 	
 	// Update is called once per frame
@@ -51,19 +53,17 @@ public class StreamingSender : MonoBehaviour {
 
 	void Destroy()
 	{
-		EventManager.StopListening (EventTypes.EVENT_SEND_SERVER_TO_CLIENT, this.SendValueToClient);
+		
 	}
 
-	public void SendValueToClient()
+	public void SendValueToClient(int value)
 	{
-		Int32 randomValue = (Int32)UnityEngine.Random.Range (0, 100);
-		TEMPvalueSent.text = "Value sent was :  " + randomValue.ToString();
+		
 		if (manualSend) {
 			byte[] message = new byte[4];
-			message = Citrus.NetworkController.WriteInt32ToByteArray (randomValue, message);
-			Debug.Log ("message: " + message.ToString ());
-			this.controller.SendToClient (2, Citrus.NetworkController.WriteInt32ToByteArray(randomValue, message),1);
-
+			message = Citrus.NetworkController.WriteInt32ToByteArray (value, message);
+			this.controller.SendToClient (2, message, 1);
+			TEMPvalueSent.text = "Value sent: " + value.ToString();
 		} else {
 			Debug.LogWarning ("You are trying to send a value to the client manually, but the streaming sender is not set to manual mode. " +
 			"Please adjust the value in the StreamingSender inspector.");

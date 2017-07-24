@@ -24,6 +24,7 @@ public class ResizableTextBox : MonoBehaviour {
 			textField.color = Color.red;
 			int newlineIndex = textField.text.IndexOf ('\n');
 			string newText = textField.text.Substring (newlineIndex + 1, textField.text.Length - 1 - newlineIndex);
+			Debug.Log (newText);
 			textField.text = newText;
 
 		} else 

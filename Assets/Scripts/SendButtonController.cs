@@ -11,6 +11,8 @@ public class SendButtonController : MonoBehaviour {
 	[SerializeField]
 	InputField input;
 
+	public delegate void Event_SendButtonClicked (int i);
+	public static Event_SendButtonClicked event_SendClicked;
 
 	// Use this for initialization
 	void Start () {
@@ -25,16 +27,17 @@ public class SendButtonController : MonoBehaviour {
 	public void SendButtonPressed()
 	{
 		Debug.Log ("Sending value...");
-		EventManager.TriggerEvent (EventTypes.EVENT_SEND_SERVER_TO_CLIENT);
-//		if (input.text != "") {
-//			try
-//			{
-//				sender.SendValueToClient(int.Parse(input.text));
-//			}
-//			catch (System.Exception e)
-//			{
-//				Debug.LogWarning("You must enter a numeric value to send to the client.");
-//			}
-//		}
+
+
+		if (input.text != "") {
+			try
+			{
+				event_SendClicked(int.Parse(input.text));
+			}
+			catch (System.Exception e)
+			{
+				Debug.LogWarning("You must enter a numeric value to send to the client.");
+			}
+		}
 	}
 }
