@@ -19,27 +19,54 @@ Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\Client_Data\Managed\Un
 Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\Client_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\Client_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\Client_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.132 seconds
+- Completed reload, in  0.038 seconds
 Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\Client_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\Client_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 6.541821 ms
+UnloadTime: 3.223704 ms
+Failed to load 'C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll', expected x86 architecture, but was x64 architecture. You must recompile your plugin for x86 architecture.
+ 
+(Filename:  Line: 141)
+
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Failed to load 'C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll', expected x86 architecture, but was x64 architecture. You must recompile your plugin for x86 architecture.
+ 
+(Filename:  Line: 141)
+
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
 Connecting to server...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HUDController.Reset () [0x00000] in <filename unknown>:0 
-  at HUDController.Start () [0x00000] in <filename unknown>:0 
+Failed to load 'C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll', expected x86 architecture, but was x64 architecture. You must recompile your plugin for x86 architecture.
+ 
+(Filename:  Line: 141)
+
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/.\libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+DllNotFoundException: C:/Workspace/TCPSandbox/TCPDemo/Builds/Client_Data/Plugins/TestUnityPlugin.dll
+  at (wrapper managed-to-native) CppAPI:TestMultiply (single,single)
+  at Citrus.AsyncClient.Start () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 4124 -> priority: 1 
+  Thread -> id: 6608 -> priority: 1 
 Exception when connecting to server: System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
 
   at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
@@ -55,7 +82,64 @@ Connecting to server...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+Exception when connecting to server: System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Attempting to reconnect...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Connecting to server...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Exception when connecting to server: System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Attempting to reconnect...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Connecting to server...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Connected to server, start receiving...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Begin receiving...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Client receive callback
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+received message
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Close...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Client receive callback
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Error received: System.ObjectDisposedException: The object was used after being disposed.
+  at System.Net.Sockets.Socket.EndReceive (IAsyncResult asyncResult, System.Net.Sockets.SocketError& errorCode) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket.EndReceive (IAsyncResult result) [0x00000] in <filename unknown>:0 
+  at Citrus.AsyncClient.ReceiveCallback (IAsyncResult ar) [0x00000] in <filename unknown>:0 
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

@@ -1,0 +1,103 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940M (ID=0x1347)
+    Vendor:   NVIDIA
+    VRAM:     2020 MB
+    Driver:   21.20.16.4542
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.041 seconds
+Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Workspace\TCPSandbox\TCPDemo\Builds\TCPDemo_2017-07-23T20_57_09\TCPDemo_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 3.523952 ms
+Failed to load 'C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll', expected x86 architecture, but was x64 architecture. You must recompile your plugin for x86 architecture.
+ 
+(Filename:  Line: 141)
+
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Failed to load 'C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll', expected x86 architecture, but was x64 architecture. You must recompile your plugin for x86 architecture.
+ 
+(Filename:  Line: 141)
+
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Connecting to server...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to load 'C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll', expected x86 architecture, but was x64 architecture. You must recompile your plugin for x86 architecture.
+ 
+(Filename:  Line: 141)
+
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/.\libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+Fallback handler could not load library C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Mono/libC:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+DllNotFoundException: C:/Workspace/TCPSandbox/TCPDemo/Builds/TCPDemo_2017-07-23T20_57_09/TCPDemo_Data/Plugins/TestUnityPlugin.dll
+  at (wrapper managed-to-native) CppAPI:TestMultiply (single,single)
+  at Citrus.AsyncClient.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 69f8 -> priority: 1 
+Exception when connecting to server: System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Attempting to reconnect...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Connecting to server...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Exception when connecting to server: System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Attempting to reconnect...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Connecting to server...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Close...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

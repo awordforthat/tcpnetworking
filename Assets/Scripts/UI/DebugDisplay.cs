@@ -14,12 +14,20 @@ public class DebugDisplay : MonoBehaviour
 	[SerializeField]
 	private Citrus.AsyncServer serverController;
 	private static string message = "Begin";
+	private Queue messageLines;
+	[SerializeField]
+	private ResizableTextBox resizableTextBox;
 
 	// Use this for initialization
 	void Awake()
 	{
 		//Application.logMessageReceivedThreaded += this.OnLogMessageReceived;
 		AsyncClient.event_ClientReceivedMessage += this.receiveMessage;
+	}
+
+	private void Start()
+	{
+		messageLines = new Queue ();
 	}
 	
 	// Update is called once per frame
@@ -41,23 +49,18 @@ public class DebugDisplay : MonoBehaviour
 
 	void OnLogMessageReceived(string condition, string stackTrace, LogType type)
 	{
-		DebugDisplay.message += "\n" + condition;
+		DebugDisplay.message += '\n' + condition;
 	}
-
-	public static void LogMessage(string message)
-	{
-		DebugDisplay.message += "\n" + message;
-	}
-
+		
 	private void receiveMessage(byte[] message)
 	{
 		String msg = "";
-		Debug.Log ("received message");
 		while (message.Length >= 4) {
-			msg += " " + NetworkController.NextInt32 (ref message).ToString();
+			msg += "Packet received: " + NetworkController.NextInt32 (ref message).ToString();
 		}
-		DebugDisplay.message += "\n" + msg;
-
+		this.resizableTextBox.AddText (msg);
 
 	}
+
+
 }

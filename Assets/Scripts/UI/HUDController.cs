@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
 using System;
+using Citrus;
 
 
 public class HUDController : MonoBehaviour {
@@ -25,12 +26,12 @@ public class HUDController : MonoBehaviour {
 
 	private void OnEnable()
 	{
-		EventManager.StartListening (EventTypes.EVENT_CLIENT_DATA_RECEIVED, this.incrementMessageCounter);
+		AsyncClient.event_ClientReceivedMessage += this.updateFields;
 	}
 
 	private void OnDisable()
 	{
-		EventManager.StopListening (EventTypes.EVENT_CLIENT_DATA_RECEIVED, this.incrementMessageCounter);
+		AsyncClient.event_ClientReceivedMessage -= this.updateFields;
 	}
 	// Update is called once per frame
 	void Update () {
@@ -41,6 +42,11 @@ public class HUDController : MonoBehaviour {
 	{
 		field_numPacketsReceived.text = "0"; 
 		packetsReceived = 0;
+	}
+
+	private void updateFields(byte[] message)
+	{
+		this.incrementMessageCounter();
 	}
 
 	private void incrementMessageCounter()

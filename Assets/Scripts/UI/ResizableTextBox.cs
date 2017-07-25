@@ -10,28 +10,41 @@ public class ResizableTextBox : MonoBehaviour {
 
 	private Text textField;
 	private RectTransform transform;
-
+	private Queue<string> messageLines;
+	private string storedText = "";
 	// Use this for initialization
 	void Start () {
 		textField = GetComponent<Text> ();
 		transform = GetComponent<RectTransform> ();
+		messageLines = new Queue<string> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-		if (textField.text.Split ('\n').Length - 1 > maxNumLines) {
-			textField.color = Color.red;
-			int newlineIndex = textField.text.IndexOf ('\n');
-			string newText = textField.text.Substring (newlineIndex + 1, textField.text.Length - 1 - newlineIndex);
-			Debug.Log (newText);
-			textField.text = newText;
 
-		} else 
+		textField.text = storedText;
+
+	}
+
+	public void AddText(string message)
+	{
+		if (messageLines.Count >= maxNumLines) 
 		{
-			textField.color = Color.black;
-			transform.sizeDelta = new Vector2 (transform.rect.width, textField.preferredHeight);
+			messageLines.Dequeue ();
 		}
 
+		messageLines.Enqueue (message);
+
+		this.updateText ();
+	}
+
+	private void updateText()
+	{
+		this.storedText = "";
+
+		foreach (string line in messageLines) 
+		{
+			this.storedText = this.storedText + "\n" + line;
+		}
 	}
 }
